@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/status_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.katiedennehy.myapplication.StatusActivity">
+
+    <include android:layout="@layout/app_bar_layout" android:id="@+id/status_appBar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/status_input_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_appBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:text="Save changes"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/status_save_btn"
+        android:layout_marginEnd="46dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Status"
+        android:id="@+id/status_layout_input"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/status_save_btn"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
